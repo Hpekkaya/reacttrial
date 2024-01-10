@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Navbar1, {AltNavbar} from './0-Components/Navbar1';
 import Body from './0-Components/Body';
@@ -9,12 +9,16 @@ import Body from './0-Components/Body';
 
 function App() {
      
+  const [value, setValue] = useState(0);
     
     return (
        <div className='App'> 
-         <Navbar1/>
+         {/* <Navbar1/>
          <AltNavbar/>
-         <Body/>
+         <Body/> */}
+         <p><button onClick={()=>{setValue(value+1)}}>Increase</button></p>
+         <p>{value}</p>
+         <p><button onClick={()=>{setValue(value-1)}}>Decrease</button></p>
        </div>
       );
     }
