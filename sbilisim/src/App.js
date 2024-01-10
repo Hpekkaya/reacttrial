@@ -5,10 +5,15 @@ import JSX from "./1-JSX/JSX"
 
 
 function App() {
+   const name = "ahmet"
+    
     return (
-       <div>
-          <p>This is the First React Application </p> 
-          <JSX/> 
+       <div className="App"> 
+         
+          <h1>Hello  {name}</h1>
+          <h2>{10+10} </h2>
+          <h2>{name.toUpperCase()}</h2>
+          {/* <JSX/>  */}
           
        </div>
       );
