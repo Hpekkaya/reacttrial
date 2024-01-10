@@ -11,4 +11,11 @@ const Navbar1 = () => {
     </div>  )
 }
 
+export const AltNavbar = ()=> {
+  return(
+    <div className='altNavbar'></div>
+  )
+}
+
+
 export default Navbar1
